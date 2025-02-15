@@ -77,16 +77,14 @@ form {
     <button type="submit" class="pageclip-form__submit">
       <span>Donate</span>
     </button>
-
-    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
-    <script>
-      let form = document.querySelector(".pageclip-form");
-      Pageclip.form(form, {
-        successTemplate: "Thank you! Someone will be in touch shortly arrange your donation."
-      });
-    </script>
   </form>
   
   <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+  <script>
+    let form = document.querySelector(".pageclip-form");
+    Pageclip.form(form, {
+      successTemplate: "Thank you! Someone will be in touch shortly arrange your donation."
+    });
+  </script>
 </body>
 </html>
