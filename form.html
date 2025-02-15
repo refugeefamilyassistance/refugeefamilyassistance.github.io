@@ -78,19 +78,11 @@ form {
       <span>Donate</span>
     </button>
 
-    <div class="success-message" id="success-message" style="display:none;">
-      Thank you! Someone will be in touch shortly arrange your donation.
-    </div>
-
     <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
     <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const form = document.querySelector('.pageclip-form');
-        const successMessage = document.getElementById('success-message');
-
-        form.addEventListener('pageclip:submit', function () {
-          successMessage.style.display = 'block';
-        });
+      let form = document.querySelector(".pageclip-form");
+      Pageclip.form(form, {
+        successTemplate: "Thank you! Someone will be in touch shortly arrange your donation."
       });
     </script>
   </form>
