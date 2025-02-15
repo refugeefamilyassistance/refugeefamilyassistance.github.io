@@ -42,12 +42,18 @@ form {
   align-items: center;
   justify-content: center;
 }
+
+.pageclip-form__spinner {
+  width: 15px;
+  height: 15px;
+  margin-left: 8px;
+}
 </style>
 </head>
 <body>
   <h1>Refugee Family Assistance</h1>
 
-  <form action="https://send.pageclip.co/HY3SUwleYCoWJ1Ap8kuzDpVsanXB72HD" class="pageclip-form" method="post" data-success-message="Thank you! Someone will be in touch shortly arrange your donation.">
+  <form action="https://send.pageclip.co/HY3SUwleYCoWJ1Ap8kuzDpVsanXB72HD" class="pageclip-form" method="post">
     <h2>Donate an item</h2>
     <div class="field-wrapper">
       <label for="item">Item</label>
@@ -71,6 +77,10 @@ form {
     <button type="submit" class="pageclip-form__submit">
       <span>Donate</span>
     </button>
+
+    <div class="pageclip-form__success" style="display:none;">
+      Thank you! Someone will be in touch shortly arrange your donation.
+    </div>
   </form>
   
   <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
